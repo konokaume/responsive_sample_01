@@ -1,0 +1,117 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  #wrap {
+    width: 90%;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+header {
+  background: #F36;
+  color: #FFF;
+  padding: 25px;
+  text-align: center;
+}
+
+.main-menu {
+  background: rgb(255, 74, 74);
+}
+.main-menu ul {
+    display: flex;
+    justify-content: center;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+  .main-menu ul li a {
+    color: rgb(116, 5, 5);
+    display: block;
+    padding: 10px 20px;
+  }
+  .main-menu ul li a:hover {
+    color: #FFF;
+    background: rgb(116, 5, 5);
+  }
+  
+
+section {
+  background: #FFF;
+  flex: 3;
+  padding: 20px;
+}
+article {
+  background: #FFF;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+article img {
+  max-width: 600px;
+  width: 100%;
+  display: block;
+  margin: 10px auto;
+  box-sizing: border-box;
+}
+aside {
+  background: rgb(116, 5, 5);
+  flex: 1;
+}
+.sub-menu {
+  background:rgb(116, 5, 5);
+}
+.sub-menu ul li a {
+    color: #FFF;
+    display: block;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  .sub-menu ul li a:hover {
+    color: rgb(116, 5, 5);
+    background: rgb(255, 171, 171);
+  }
+footer {
+  background: rgb(44, 25, 25);
+  color: #FFF;
+  padding: 20px;
+  text-align: center;
+}
+
+/*タブレット用*/
+@media all and (max-width: 1024px) {
+  #wrap {
+    width: 100%;
+  }
+}
+
+/*スマホ用*/
+@media all and (max-width: 599px) {
+  /* .main-menu ul {
+    display: block;
+  } */
+
+  .main-menu ul li {
+    text-align: center;
+  }
+
+  main {
+    display: block;
+    flex-direction: unset;
+  }
+
+  .sub-menu ul li {
+    text-align: center;
+    padding: 5px 5px;
+  }
+}
+
+
+
+
+
